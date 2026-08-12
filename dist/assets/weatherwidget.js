@@ -1,0 +1,18 @@
+const widgetContainer = document.createElement('div');
+widgetContainer.id = 'ww_5240e68635240';
+widgetContainer.setAttribute('v', '1.3');
+widgetContainer.setAttribute('loc', 'auto');
+widgetContainer.setAttribute('a', '{"t":"ticker","lang":"zh","sl_lpl":1,"ids":[],"font":"Times","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}');
+const widgetLink = document.createElement('a');
+widgetLink.href = 'https://weatherwidget.org/zh/';
+widgetLink.id = 'ww_5240e68635240_u';
+widgetLink.target = '_blank';
+widgetLink.textContent = '天气插件';
+widgetLink.style.opacity = '0';
+widgetLink.style.pointerEvents = 'none';
+widgetContainer.appendChild(widgetLink);
+const widgetScript = document.createElement('script');
+widgetScript.async = true;
+widgetScript.src = 'https://app3.weatherwidget.org/js/?id=ww_5240e68635240';
+document.body.appendChild(widgetContainer);
+document.body.appendChild(widgetScript);
